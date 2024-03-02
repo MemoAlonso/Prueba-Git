@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Informes</title>
+	<link rel="stylesheet" type="text/css" href="css/styles_informes.css">
+	<script src="procesos.js"></script>
+</head>
+<body>
+	<header>
+		<h1>Sistema de Control de Procesos</h1>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="#parametrizacion">Parámetrización</a></li>
+			<li><a href="informes.html">Informes</a></li>
+			<li><a href="recomendaciones.html">Recomendaciones</a></li>
+			<li><a href="#acciones">Acciones</a></li>
+		</ul>
+	</nav>
+	<main>
+		<section id="informes">
+			<h2>Informes</h2>
+			<form action="#" method="post">
+				<label for="numero_informe">Número de Informe:</label>
+				<input type="text" id="numero_informe" name="numero_informe">
+				<label for="area_rubro">Área / Rubro:</label>
+				<input type="text" id="area_rubro" name="area_rubro">
+				<label for="alcance">Alcance:</label>
+				<input type="text" id="alcance" name="alcance">
+				<label for="numero_recomendaciones">Número Total de Recomendaciones:</label>
+				<input type="number" id="numero_recomendaciones" name="numero_recomendaciones">
+				<label for="periodo_desde">Periodo Desde:</label>
+				<input type="date" id="periodo_desde" name="periodo_desde">
+				<label for="periodo_hasta">Periodo Hasta:</label>
+				<input type="date" id="periodo_hasta" name="periodo_hasta">
+				<label for="fecha_aprobacion">Fecha de Aprobación:</label>
+				<input type="date" id="fecha_aprobacion" name="fecha_aprobacion">
+				<label for="archivo">Archivo:</label>
+				<input type="file" id="archivo" name="archivo">
+				<input type="submit" value="Guardar">
+			</form>
+		</section>
+		<button class="boton-atras" onclick="volverAtras()">Atrás</button>
+		
+	</main>
+</body>
+</html>
